@@ -1,5 +1,6 @@
 #! /usr/bin/perl
 package hello;
+# 编译指示（pragmas）
 #use strict;
 use warnings FATAL => 'all';
 use utf8;
