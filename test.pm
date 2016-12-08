@@ -9,6 +9,13 @@ print $str1 eq $str2;
 print $str1 == $str2;
 print "yes" == "no"; # "1"
 
+$test = <STDIN>;
+if (defined($test)) {
+    print "the input is $test\n";
+} else {
+    print "no input\n";
+}
+
 my @array = (
     "print",
     "abc"
