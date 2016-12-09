@@ -30,3 +30,18 @@ my @arr = qw(a b c d);
 @remove = splice @arr, 2, 1;
 print "\n", @arr;
 print "\n", @remove;
+
+
+@rocks = qw/ a v c de/;
+@sorted = sort @rocks;
+print "\n", @sorted;
+print "\n", @rocks;
+@back = reverse sort @rocks;
+print "\n", @back;
+@rocks = sort @rocks;
+print "\n", @rocks;
+while(my ($index, $value) = each @rocks) {
+    print "\n $index: $value";
+}
+
+print "\n", 6 + @rocks;
