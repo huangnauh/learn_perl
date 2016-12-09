@@ -1,3 +1,8 @@
+use warnings;
+use 5.0.10;
+use autodie;
+
+open LOG, '<', 'logfile';
 sub total {
     my $sum;
     foreach (@_) {
@@ -32,3 +37,12 @@ sub above_average {
 }
 
 print "\n ", above_average 1,2,3,4,5;
+print "\n";
+
+while( <> ) {
+    chomp;
+    print "i saw $_\n";
+}
+
+my @items = qw( a b c);
+printf "The items are:\n" . ("%5s\n" x @items), @items;
